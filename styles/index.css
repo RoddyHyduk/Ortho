@@ -113,7 +113,7 @@ header {
 
 .top-icons {
 	position: fixed;
-	width: 44px;
+	width: 40px;
 	top: 24px;
 	margin-right: 20px;
 	padding: 10px;
@@ -167,7 +167,7 @@ header {
 	
 
 	.top-icons {
-		width: 37px;
+		width: 36px;
 		top: 18px;
 		padding-left: 0px;
 		margin-right: 0px;
@@ -223,8 +223,8 @@ header {
 
 .top-icons {
 	position: fixed;
-	width: 44px;
-	top: 24px;
+	width: 40px;
+	top: 26px;
 	margin-right: 20px;
 	padding: 10px;
 	padding-left: 50px;
@@ -235,13 +235,13 @@ header {
 
 @media (min-width: 992px) { /* Nav margin top medium screens. */
 	.top-icons {
-		width: 44px;
+		width: 40px;
 	}
 }
 
 @media (min-width: 1200px) { /* Nav margin top large screens. */
 	.top-icons {
-		width: 44px;
+		width: 40px;
 	}
 }
 
