@@ -17,9 +17,22 @@ header {
 	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
+#logo {
+	display: inline;
+	margin-left: 87px;
+	margin-top: 8px;
+	width: 90px;
+}
+
+
 @media (max-width: 480px) { /* Header height on extra small screens. */
 	header {
 		height: 75px;
+	}
+	#logo {
+	margin-left: 70px;
+	margin-top: 7px;
+	width: 60px;
 	}
 }
 
@@ -27,11 +40,21 @@ header {
 	header {
 		height: 95px;
 	}
+	#logo {
+	margin-left: 80px;
+	margin-top: 8px;
+	width: 77px;
+	}
 }
 
 @media (min-width: 768px) { /* Header height on small screens. */
 	header {
 		height: 115px;
+	}
+	#logo {
+	margin-left: 87px;
+	margin-top: 8px;
+	width: 93px;
 	}
 }
 
@@ -39,53 +62,61 @@ header {
 	header {
 		height: 115px;
 	}
+	#logo {
+	margin-left: 87px;
+	margin-top: 8px;
+	width: 93px;
+	}
 }
 
 @media (min-width: 1200px) { /* Header height on large screens. */
 	header {
 		height: 115px;
 	}
+	#logo {
+	margin-left: 87px;
+	margin-top: 8px;
+	width: 93px;
+	}
 }
 
 
-#logo {
-	margin-left: 70px;
-	margin-top: 20px;
-	width: 120px;
-}
-
-
-#phone {
+#icon-container {
 	position: fixed;
-	padding: 20px;
-	width: 30px;
-	height: 30px;
-	top: 29px;
-	right: 120px;
-	opacity: .5;
-
+	padding: 0px;
+	width: 400px;
+	height: 90px;
+	top: 10px;
+	right: 24px;
+	background-color: ;
 }
 
-#phone:hover {
-	position: fixed;
-	padding: 20px;
-	width: 30px;
-	height: 30px;
-	top: 29px;
-	right: 120px;
-	opacity: 1;
-
+.sub-contain {
+	position: relative;
+	display: inline;
+	float: left;
+	margin-top: 18px;
+	height: 0px;
+	width: 100px;
+	background-color: ;
 }
 
-#hamburgerbox {
-	position: fixed;
-	padding: 20px;
-	width: 50px;
-	height: 50px;
-	top: 30px;
-	right: 20px;
+.sub-contain:hover {
 	background-color: white;
-	opacity: .5;
+}
+
+.top-icons {
+	position: fixed;
+	width: 40px;
+	top: 26px;
+	margin-right: 20px;
+
+
+
+	padding: 10px;
+	padding-left: 50px;
+
+	opacity: .4;
 
 	 -webkit-transition: all .2s ease;
      -moz-transition: all .2s ease;
@@ -94,11 +125,9 @@ header {
           transition: all .2s ease;
 }
 
-
-#hamburgerbox:hover {
+.top-icons:hover {
 	opacity: 1;
 	cursor: pointer;
-
 	 -webkit-transition: all .2s ease;
      -moz-transition: all .2s ease;
        -o-transition: all .2s ease;
@@ -106,6 +135,20 @@ header {
           transition: all .2s ease;
 }
 
+.icon-text {
+	position: relative;
+	display: inline;
+	right: 47px;
+	top: -15px;
+	font-size: .7em;
+	opacity: .4;
+}
+
+@media (max-width: 768px) { 
+		.icon-text {
+		display: none;
+	}
+}
 
 
 
@@ -124,31 +167,31 @@ nav.sb-slidebar {
 
 }
 
-@media (max-width: 480px) { /* extra small screens. */
+@media (max-width: 480px) { /* Nav margin top extra small screens. */
 	nav.sb-slidebar {
 		margin-top: 75px;
 	}
 }
 
-@media (min-width: 481px) { /* small screens. */
+@media (min-width: 481px) { /* Nav margin top small screens. */
 	nav.sb-slidebar {
 		margin-top: 95px;
 	}
 }
 
-@media (min-width: 768px) { /* small screens. */
+@media (min-width: 768px) { /* Nav margin top small screens. */
 	nav.sb-slidebar {
 		margin-top: 115px;
 	}
 }
 
-@media (min-width: 992px) { /* medium screens. */
+@media (min-width: 992px) { /* Nav margin top medium screens. */
 	nav.sb-slidebar {
 		margin-top: 115px;
 	}
 }
 
-@media (min-width: 1200px) { /* large screens. */
+@media (min-width: 1200px) { /* Nav margin top large screens. */
 	nav.sb-slidebar {
 		margin-top: 115px;
 	}
@@ -277,7 +320,7 @@ p {
 	font-weight: normal;
 	line-height: 25px;
 	color: #3f3f3f;
-	padding: 30px;
+	padding: 50px;
 }
 
 
@@ -286,7 +329,8 @@ h1 {
 	font-size: 2em;
 	font-weight: bold;
 	color: #3f3f3f;
-	padding: 30px;
+	padding: 50px;
+	line-height: 1.3em;
 }
 
 
@@ -365,7 +409,9 @@ footer {
 
 /****************** STYLES - DELETE AFTER BUILD *********************
 
-YELLOW: #FFCC00
+YELLOW backgrounds: #FFCC00
+
+YELLOW logo accent: #FFD400
 
 
 
