@@ -1,4 +1,3 @@
-
 html,body {
 	width: 100%;
 	height: 100%;
@@ -6,55 +5,55 @@ html,body {
 	margin: 0px;
 }
 
-::selection {
-	background: white; /* Safari */
-	}
-::-moz-selection {
-	background: white; /* Firefox */
-}
-
-
-.window{
-    width:100%;
-    height:100%;
-    position:absolute;
-}
-
-@for $i from 1 through 6{
-    .window:nth-child(#{$i}){
-        background:nth($colors, $i);
-        top:($i - 1) * 100%;
-    }
-}
-
 
 /***************** HEADER ******************/
 
 header {
 	position: fixed;
-	height: 130px;
+	height: 115px;
 	width: 100%;
 	background-color: white;
 	z-index: 20;
 	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
 }
 
-#hamburgerbox {
-	position: fixed;
-	padding: 20px;
-	width: 50px;
-	height: 50px;
-	top: 30px;
-	right: 20px;
-	background-color: white;
-	opacity: .5;
-
-	 -webkit-transition: all .2s ease;
-     -moz-transition: all .2s ease;
-       -o-transition: all .2s ease;
-      -ms-transition: all .2s ease;
-          transition: all .2s ease;
+@media (max-width: 480px) { /* Header height on extra small screens. */
+	header {
+		height: 75px;
+	}
 }
+
+@media (min-width: 481px) { /* Header height on small screens. */
+	header {
+		height: 95px;
+	}
+}
+
+@media (min-width: 768px) { /* Header height on small screens. */
+	header {
+		height: 115px;
+	}
+}
+
+@media (min-width: 992px) { /* Header height on medium screens. */
+	header {
+		height: 115px;
+	}
+}
+
+@media (min-width: 1200px) { /* Header height on large screens. */
+	header {
+		height: 115px;
+	}
+}
+
+
+#logo {
+	margin-left: 70px;
+	margin-top: 20px;
+	width: 120px;
+}
+
 
 #phone {
 	position: fixed;
@@ -78,6 +77,24 @@ header {
 
 }
 
+#hamburgerbox {
+	position: fixed;
+	padding: 20px;
+	width: 50px;
+	height: 50px;
+	top: 30px;
+	right: 20px;
+	background-color: white;
+	opacity: .5;
+
+	 -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+       -o-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+          transition: all .2s ease;
+}
+
+
 #hamburgerbox:hover {
 	opacity: 1;
 	cursor: pointer;
@@ -89,11 +106,6 @@ header {
           transition: all .2s ease;
 }
 
-#logo {
-	margin-left: 70px;
-	margin-top: 20px;
-	width: 120px;
-}
 
 
 
@@ -106,10 +118,40 @@ header {
 
 nav.sb-slidebar {
 	background-color: #cccccc;
-	margin-top: 130px;
+	margin-top: 115px;
 	height: 100%;
 	overflow: scroll;
 
+}
+
+@media (max-width: 480px) { /* extra small screens. */
+	nav.sb-slidebar {
+		margin-top: 75px;
+	}
+}
+
+@media (min-width: 481px) { /* small screens. */
+	nav.sb-slidebar {
+		margin-top: 95px;
+	}
+}
+
+@media (min-width: 768px) { /* small screens. */
+	nav.sb-slidebar {
+		margin-top: 115px;
+	}
+}
+
+@media (min-width: 992px) { /* medium screens. */
+	nav.sb-slidebar {
+		margin-top: 115px;
+	}
+}
+
+@media (min-width: 1200px) { /* large screens. */
+	nav.sb-slidebar {
+		margin-top: 115px;
+	}
 }
 
 ul {
@@ -127,7 +169,7 @@ a {
 	text-decoration: none;
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-weight: bold;
-	font-size: 19px;	
+	font-size: 1.2em;	
 	color: white;
 
 	width: auto;
@@ -137,14 +179,14 @@ a {
 	padding-bottom: 27px;
 	margin: 0px;
 
-	 border: 1px solid rgba(255, 255, 255, 0.2);
-
-	 -webkit-transition: all .2s ease;
-     -moz-transition: all .2s ease;
-       -o-transition: all .2s ease;
-      -ms-transition: all .2s ease;
-          transition: all .2s ease;
+	border: 1px solid rgba(255, 255, 255, 0.25);
 }
+
+a:hover {
+	background-color: #FFCC00;
+	color: #333333;
+}
+
 
 .nav-descriptors {
 	display: inline-block;
@@ -152,18 +194,20 @@ a {
 	font-size: .7em;
 	color: #333333;
 	opacity: .7;
-	margin-top: 10px;
+	margin-top: 8px;
 	line-height: 20px;
 	padding-right: 30px;
 }
+
 
 @media only screen and (max-width: 767px) {
     
     .nav-descriptors {
     	display: none;
     }
+
     a {
-    	font-size: 19px;
+    	font-size: 18px;
     	padding-top: 20px;
 		padding-bottom: 20px;
 		padding-left: 25px;
@@ -171,23 +215,12 @@ a {
 	
 }
 
-a:hover {
-	background-color: #FFCC00;
-	color: #333333;
-
-	 -webkit-transition: all .2s ease;
-     -moz-transition: all .2s ease;
-       -o-transition: all .2s ease;
-      -ms-transition: all .2s ease;
-          transition: all .2s ease;
-}
 
 
 
 
 
-
-/******************** PAGE **********************/
+/******************** FULL CONTENT WRAPPER **********************/
 
 #sb-site{
 	-webkit-box-shadow: -7px -1px 26px -7px rgba(0,0,0,0.35);
@@ -196,44 +229,70 @@ a:hover {
 }
 
 
+.page-wrap {
+	position: relative;
+	background-color: #FFCC00;
+	margin-top: 120px;
+}
 
-#panel {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: black;
-	opacity: .6;
-	z-index: 50;
-	display: none;
+
+@media (max-width: 480px) { /* extra small screens. */
+	.page-wrap {
+	margin-top: 75px;
+	}
+}
+
+@media (min-width: 481px) { /* small screens. */
+	.page-wrap {
+	margin-top: 95px;
+	}
+}
+
+
+@media (min-width: 768px) { /* small screens. */
+	.page-wrap {
+	margin-top: 115px;
+	}
+}
+
+
+@media (min-width: 992px) { /* medium screens. */
+	.page-wrap {
+	margin-top: 115px;
+	}
+}
+
+
+@media (min-width: 1200px) { /* large screens. */
+	.page-wrap {
+	margin-top: 115px;
+	}
+}
+
+/******************** CONTENT **********************/
+
+p {
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 25px;
+	color: #3f3f3f;
+	padding: 30px;
+}
+
+
+h1 {
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	color: #3f3f3f;
+	padding: 30px;
 }
 
 
 .bannerimage {
 	position: relative;
 	width: 100%;
-}
-
-.page-content {
-	position: relative;
-	background-color: #FFCC00;
-	margin-top: 130px;
-}
-
-h1, p {
-	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-	padding: 20px;
-	font-weight: bold;
-	color: #3f3f3f;
-	padding: 60px;
-}
-
-p {
-	font-weight: normal;
-	line-height: 25px;
-}
-
-h1 {
-	font-size: 2em;
 }
 
 
@@ -245,7 +304,7 @@ footer {
 	position: relative;
 	display: block;
 	width: 100%;
-	height: 200px;
+	height: 300px;
 	bottom: 0px;
 	background-color: white;
 }
@@ -254,9 +313,8 @@ footer {
 
 
 
-/******************** ANIMATION KEYFRAMES **********************/
 
-
+/************ ANIMATION KEYFRAMES ****************/
 
 
 /*
@@ -268,8 +326,6 @@ footer {
 	  -webkit-animation-delay: 0s;
 
 */
-
-
 
 
 @-webkit-keyframes slideright {
@@ -303,3 +359,14 @@ footer {
 
 }
 
+
+
+
+
+/****************** STYLES - DELETE AFTER BUILD *********************
+
+YELLOW: #FFCC00
+
+
+
+*/
