@@ -137,7 +137,6 @@ div.sb-left {
 		background-repeat: repeat;
 		background-position: fixed;
 		background-position: center;
-
 }
 
 		@media (max-width: 480px) { /* extra small screens */
@@ -491,7 +490,7 @@ p.icon-text {
 
 .page-wrap {
 	position: relative;
-	background-color: #FFCC00;
+	background-color: #FFD400;
 	margin-top: 120px;
 
 }
@@ -519,7 +518,6 @@ p.icon-text {
 	}
 }
 
-
 @media (min-width: 768px) { /* small screens. */
 	.page-wrap {
 	margin-top: 115px;
@@ -532,7 +530,6 @@ p.icon-text {
 	margin-top: 115px;
 	}
 }
-
 
 @media (min-width: 1200px) { /* large screens. */
 	.page-wrap {
