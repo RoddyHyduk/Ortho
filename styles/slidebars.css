@@ -36,7 +36,7 @@ html, body {
 }
 
 html {
-	height: 100%;
+	height: 100%;  
 }
 
 body {
@@ -94,41 +94,24 @@ html.sb-static .sb-slidebar,
 	.sb-slidebar {
 		width: 30%;
 	}
-	
-	.sb-width-thin {
-		width: 15%;
+
+	.sb-slidebar.form-slidebar {
+		width: 100%;
 	}
 	
-	.sb-width-wide {
-		width: 45%;
-	}
 
 @media (max-width: 480px) { /* Slidebar width on extra small screens. */
 	.sb-slidebar {
-		width: 60%;
+		width: 70%;
 	}
 	
-	.sb-width-thin {
-		width: 55%;
-	}
-	
-	.sb-width-wide {
-		width: 85%;
-	}
 }
 
 @media (min-width: 481px) { /* Slidebar width on small screens. */
 	.sb-slidebar {
-		width: 50%;
+		width: 55%;
 	}
 	
-	.sb-width-thin {
-		width: 40%;
-	}
-	
-	.sb-width-wide {
-		width: 70%;
-	}
 }
 
 @media (min-width: 768px) { /* Slidebar width on small screens. */
@@ -136,13 +119,6 @@ html.sb-static .sb-slidebar,
 		width: 40%;
 	}
 	
-	.sb-width-thin {
-		width: 25%;
-	}
-	
-	.sb-width-wide {
-		width: 55%;
-	}
 }
 
 @media (min-width: 992px) { /* Slidebar width on medium screens. */
@@ -150,13 +126,6 @@ html.sb-static .sb-slidebar,
 		width: 40%;
 	}
 	
-	.sb-width-thin {
-		width: 15%;
-	}
-	
-	.sb-width-wide {
-		width: 45%;
-	}
 }
 
 @media (min-width: 1200px) { /* Slidebar width on large screens. */
@@ -164,13 +133,6 @@ html.sb-static .sb-slidebar,
 		width: 35%;
 	}
 	
-	.sb-width-thin {
-		width: 5%;
-	}
-	
-	.sb-width-wide {
-		width: 35%;
-	}
 }
 
 /* ---------------
