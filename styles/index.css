@@ -7,7 +7,6 @@ html,body {
 }
 
 
-
 /***************** navigation styles ******************/
 
 nav.sb-slidebar {
@@ -128,7 +127,7 @@ a.nav:hover {
 
 /***************** form container styles ******************/
 
-div.sb-slidebar {
+div.sb-left {
 	background-color: white ;
 	
 	margin-top: 115px;
@@ -181,7 +180,7 @@ div.sb-slidebar {
 	display: inline;
 	float: right;
 	margin-right: 57px;
-	margin-top: 40px;
+	margin-top: 30px;
 	width: 40px;
 	opacity: .8;
 
@@ -311,7 +310,7 @@ a.sub-contain {
 	padding-bottom: 27px;
 }
 
-.sub-contain:hover {
+a.sub-contain:hover {
 	background-color: white;
 }
 
@@ -343,6 +342,10 @@ p#forms {
           transition: all .2s ease;
 }
 
+.top-icons:hover {
+	opacity: .9;
+	cursor: pointer;
+}
 
 		@media (max-width: 480px) { /* extra small screens */
 		
@@ -455,13 +458,6 @@ p#forms {
 			/* full icon styles inherit from smaller screens */
 		}
 
-
-
-.top-icons:hover {
-	opacity: .9;
-	cursor: pointer;
-}
-
 p.icon-text {
 	position: relative;
 	display: inline;
@@ -502,12 +498,13 @@ p.icon-text {
 
 .page-wrap.contact-page {
 	padding-bottom: 120px;
-
+/*
 	-webkit-animation: slidedown .5s ease 0 normal backwards;
 	  -moz-animation: slidedown .5s ease 0 normal backwards;
 	  -o-animation: slidedown .5s ease 0 normal backwards;
 	  animation: slidedown .5s ease 0 normal backwards;
 	  -webkit-animation-delay: 0s;
+*/
 }
 
 @media (max-width: 480px) { /* extra small screens. */

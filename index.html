@@ -15,23 +15,24 @@
 
 <body>
 
+
 <header class="">
 
-		<a class="logo-wrap" href="index.html"><img id="logo" src="images/ortho-logo.svg"/></a>
+		<a class="logo-wrap" href=""><img id="logo" src="images/ortho-logo.svg"/></a>
 
 		<div id="icon-container">
 
-			<a class="sub-contain">
+			<a class="sub-contain sb-toggle-left">
 				<p class="icon-text" id="forms">Forms</p>
-				<img class="top-icons sb-toggle-left" src="images/icons-01.svg"/></a>
+				<img class="top-icons" src="images/icons-01.svg"/></a>
 			
 			<a href="contact.html" class="sub-contain">
 				<p class="icon-text" id="contact">Contact</p>
 				<img class="top-icons"src="images/icons-02.svg"/></a>	
 				
-			<a class="sub-contain">
+			<a class="sub-contain sb-toggle-right">
 				<p class="icon-text" id="menu">Menu</p>
-				<img class="top-icons sb-toggle-right" src="images/icons-03.svg"/></a>
+				<img class="top-icons" src="images/icons-03.svg"/></a>
 					
 		</div>
 
@@ -60,9 +61,10 @@
 </nav>
 
 
-<div class="sb-slidebar sb-left sb-style-overlay form-slidebar">
+<div class="sb-slidebar sb-left sb-style-overlay">
 
-<img class="form-icon sb-toggle-left" src="images/icons-04.svg"/></a>
+	<img class="form-icon sb-toggle-left" src="images/icons-04.svg"/></a>
+
 </div>
 
 
@@ -99,7 +101,6 @@
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
 <script src="js/slidebars.js"></script>
 
 <script>
@@ -114,14 +115,13 @@
   (function($) {
     $(document).ready(function() {
       $.slidebars({
-        siteClose: true 
+        siteClose: true
         disableOver: false 
         hideControlClasses: true
       });
     });
   }) (jQuery);
 </script>
-
 
 
 
