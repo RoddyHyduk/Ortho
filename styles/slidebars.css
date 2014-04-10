@@ -99,14 +99,22 @@ html.sb-static .sb-slidebar,
 
 @media (max-width: 480px) { /* Slidebar width on extra small screens. */
 	.sb-slidebar {
-		width: 70%;
+		width: 65%;
+	}
+
+	#form-slidebar {
+		width: 100%;
 	}
 	
 }
 
 @media (min-width: 481px) { /* Slidebar width on small screens. */
 	.sb-slidebar {
-		width: 55%;
+		width: 50%;
+	}
+
+	#form-slidebar {
+		width: 100%;
 	}
 }
 
@@ -114,19 +122,33 @@ html.sb-static .sb-slidebar,
 	.sb-slidebar {
 		width: 40%;
 	}
+
+	#form-slidebar {
+		width: 100%;
+	}
+
 }
 
 @media (min-width: 992px) { /* Slidebar width on medium screens. */
 	.sb-slidebar {
-		width: 40%;
+		width: 36%;
+	}
+
+	#form-slidebar {
+		width: 100%;
 	}
 }
 
 @media (min-width: 1200px) { /* Slidebar width on large screens. */
 	.sb-slidebar {
-		width: 35%;
+		width: 32%;
+	}
+
+	#form-slidebar {
+		width: 100%;
 	}
 }
+
 
 /* ---------------
  * 004 - Animation
