@@ -4,9 +4,10 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
 	 height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
 <g id="Layer_1">
-	<rect x="-28" y="-22" fill="#FFFFFF" width="225" height="123"/>
-	<rect x="7.5" y="6.5" fill="none" stroke="#231F20" stroke-miterlimit="10" width="14" height="19"/>
-	<rect x="3.5" y="3.5" fill="#FFFFFF" stroke="#231F20" stroke-miterlimit="10" width="14" height="19"/>
+	<path fill="none" stroke="#231F20" stroke-miterlimit="10" d="M6.56,9.625c0-3.053,2.556-6.838,7.343-6.838
+		c4.787,0,7.261,3.986,7.261,6.946c0,3.406-2.309,5.817-4.087,8.742c-1.703,2.801-3.163,6.64-3.163,6.64s-1.239-3.783-2.983-6.591
+		C9.224,15.778,6.56,13.951,6.56,9.625z"/>
+	<circle fill="none" stroke="#231F20" stroke-miterlimit="10" cx="13.912" cy="10.097" r="2.906"/>
 </g>
 <g id="Layer_2">
 </g>
