@@ -189,7 +189,7 @@ header {
 
 #logo {
 	display: inline;
-	margin-left: 87px;
+	margin-left: 42px;
 	margin-top: 8px;
 	width: 93px;
 }
@@ -201,7 +201,7 @@ header {
 				height: 75px;
 			}
 			#logo {
-			margin-left: 8%;
+			margin-left: 42px;
 			margin-top: 7px;
 			width: 60px;
 			}
@@ -213,7 +213,7 @@ header {
 				height: 95px;
 			}
 			#logo {
-			margin-left: 10%;
+			margin-left: 42px;
 			margin-top: 8px;
 			width: 77px;
 			}
@@ -225,7 +225,7 @@ header {
 				height: 115px;
 			}
 			#logo {
-			margin-left: 10%;
+			margin-left: 42px;
 			margin-top: 8px;
 			width: 93px;
 			}
@@ -237,7 +237,7 @@ header {
 				height: 115px;
 			}
 			#logo {
-			margin-left: 10%;
+			margin-left: 42px;
 			margin-top: 8px;
 			width: 93px;
 			}
@@ -249,7 +249,7 @@ header {
 				height: 115px;
 			}
 			#logo {
-			margin-left: 10%;
+			margin-left: 42px;
 			margin-top: 8px;
 			width: 93px;
 			}
@@ -304,6 +304,7 @@ a.sub-contain:hover {
 	padding-left: 50px;
 	margin-right: 20px;
 	opacity: .4;
+	z-index: 1000;
 
 	 -webkit-transition: all .2s ease;
      -moz-transition: all .2s ease;
@@ -731,30 +732,27 @@ p {
 	font-size: 1em;
 	font-weight: normal;
 	line-height: 25px;
-	color: #4f4f4f;
+	color: #565656;
 	padding: 0px;
 }
-
-p.footer-text {
-
-}
-
-a.footer-links {
-
-}
-
 
 h1 {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 2em;
 	font-weight: bold;
-	color: #4f4f4f;
+	color: #565656;
 	padding: 50px;
 	line-height: 1.6em;
+
+
 }
 
 .white-text {
 	color: #f7f7f7;
+}
+
+.yellow-text {
+	color: #FFD400;
 }
 
 .yellow-back {
@@ -765,8 +763,6 @@ h1 {
 	position: relative;
 	width: 100%;
 }
-
-
 
 .index-box {
 	position: relative;
@@ -787,13 +783,14 @@ footer {
 	display: block;
 	max-width: 100%
 	bottom: 0px;
-	height: 300px;
+	height: 330px;
 	background-color: #eaeaea;   /*#eaeaea light gray*/
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 }
 
 #footer-centering {
+	position: relative;
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
@@ -825,12 +822,12 @@ footer {
 .footer-link-block {
 	position: absolute;
 	top: 50px;
-	left: 440px;
+	left: 445px;
 }
 
 .footer-signoff {
 	position: absolute;
-	top: 220px;
+	top: 240px;
 	right: 45px;
 	text-align: right;
 }
@@ -847,18 +844,22 @@ footer {
 .footer-address1, .footer-address2, .footer-link-block, .footer-signoff {
 		font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 		font-weight: bold;
-		font-size: .8em;
+		font-size: .9em;
 		line-height: 1.6em;
 }
 
 a.footer-link {
 	text-decoration: none;
 	color: #4f4f4f;
-	opacity: .5;
+	opacity: .4;
 }
 
 a.footer-link:hover {
 	opacity: 1;
+}
+
+a#address-titles {
+	text-decoration: none;
 }
 
 address {
@@ -872,8 +873,10 @@ address {
 }
 
 .signoff-text {
-	color: #4f4f4f;
+	color: #999999;
 	font-weight: normal;
+	font-size: .85em;
+	line-height: 1.5em;
 }
 
 
