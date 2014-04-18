@@ -184,12 +184,12 @@ header {
 	width: 100%;
 	background-color: white;
 	z-index: 20;
-	box-shadow: 0px 1px 0px 0px rgba(100, 100, 100, 0.15);
+	box-shadow: 0px 1px 0px 0px rgba(100, 100, 100, 0.1);
 }
 
 #logo {
 	display: inline;
-	margin-left: 42px;
+	margin-left: 8%;
 	margin-top: 8px;
 	width: 93px;
 }
@@ -201,7 +201,7 @@ header {
 				height: 75px;
 			}
 			#logo {
-			margin-left: 42px;
+			margin-left: 8%;
 			margin-top: 7px;
 			width: 60px;
 			}
@@ -213,7 +213,7 @@ header {
 				height: 95px;
 			}
 			#logo {
-			margin-left: 42px;
+			margin-left: 8%;
 			margin-top: 8px;
 			width: 77px;
 			}
@@ -225,7 +225,7 @@ header {
 				height: 115px;
 			}
 			#logo {
-			margin-left: 42px;
+			margin-left: 8%;
 			margin-top: 8px;
 			width: 93px;
 			}
@@ -237,7 +237,7 @@ header {
 				height: 115px;
 			}
 			#logo {
-			margin-left: 42px;
+			margin-left: 8%;
 			margin-top: 8px;
 			width: 93px;
 			}
@@ -249,7 +249,7 @@ header {
 				height: 115px;
 			}
 			#logo {
-			margin-left: 42px;
+			margin-left: 8%;
 			margin-top: 8px;
 			width: 93px;
 			}
@@ -285,15 +285,15 @@ a.sub-contain:hover {
 }
 
 #menu {
-	right: 38px;
+	right: 40px;
 }
 
 #contact {
-	right: 42px;
+	right: 50px;
 }
 
 #map {
-	right: 50px;
+	right: 60px;
 }
 
 .top-icons {
@@ -432,11 +432,12 @@ a.sub-contain:hover {
 .icon-text {
 	position: relative;
 	display: inline;
+	font-weight: normal;
 	right: 47px;
 	top: -14px;
-	font-size: .7em;
-	letter-spacing: .01em;
-	opacity: .4;
+	font-size: .8em;
+	letter-spacing: .00em;
+	opacity: .3;
 	padding: 50px;
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	color: black;
@@ -759,6 +760,10 @@ h1 {
 	background-color: #FFD400;
 }
 
+.dkgrey-text {
+	color: #666666;
+}
+
 .bannerimage {
 	position: relative;
 	width: 100%;
@@ -785,7 +790,7 @@ footer {
 	bottom: 0px;
 	height: 330px;
 	background-color: #eaeaea;   /*#eaeaea light gray*/
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(0, 0, 0, 0.05);
 	overflow: hidden;
 }
 
