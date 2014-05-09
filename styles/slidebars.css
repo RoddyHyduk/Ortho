@@ -99,7 +99,7 @@ html.sb-static .sb-slidebar,
 
 @media (max-width: 480px) { /* Slidebar width on extra small screens. */
 	.sb-slidebar {
-		width: 65%;
+		width: 60%;
 	}
 
 	#form-slidebar {
@@ -110,7 +110,7 @@ html.sb-static .sb-slidebar,
 
 @media (min-width: 481px) { /* Slidebar width on small screens. */
 	.sb-slidebar {
-		width: 50%;
+		width: 45%;
 	}
 
 	#form-slidebar {
@@ -120,7 +120,7 @@ html.sb-static .sb-slidebar,
 
 @media (min-width: 768px) { /* Slidebar width on small screens. */
 	.sb-slidebar {
-		width: 40%;
+		width: 55%;
 	}
 
 	#form-slidebar {
@@ -131,7 +131,7 @@ html.sb-static .sb-slidebar,
 
 @media (min-width: 992px) { /* Slidebar width on medium screens. */
 	.sb-slidebar {
-		width: 36%;
+		width: 40%;
 	}
 
 	#form-slidebar {
@@ -141,7 +141,7 @@ html.sb-static .sb-slidebar,
 
 @media (min-width: 1200px) { /* Slidebar width on large screens. */
 	.sb-slidebar {
-		width: 32%;
+		width: 35%;
 	}
 
 	#form-slidebar {
@@ -161,6 +161,7 @@ html.sb-static .sb-slidebar,
 	        transition: transform 300ms ease;
 	-webkit-transition-property: -webkit-transform, left, right; /* Add left/right for Android < 4.4. */
 	-webkit-backface-visibility: hidden; /* Prevents flickering. This is non essential, and you may remove it if your having problems with fixed background images in Chrome. */
+
 }
 
 /* --------------------
