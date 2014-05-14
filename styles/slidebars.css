@@ -99,7 +99,7 @@ html.sb-static .sb-slidebar,
 
 @media (max-width: 480px) { /* Slidebar width on extra small screens. */
 	.sb-slidebar {
-		width: 60%;
+		width: 65%;
 	}
 
 	#form-slidebar {
@@ -110,7 +110,7 @@ html.sb-static .sb-slidebar,
 
 @media (min-width: 481px) { /* Slidebar width on small screens. */
 	.sb-slidebar {
-		width: 45%;
+		width: 40%;
 	}
 
 	#form-slidebar {
