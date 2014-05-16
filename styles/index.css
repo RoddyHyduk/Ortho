@@ -6,7 +6,7 @@ html,body {
 	margin: 0px;
 }
 
-a[href^=tel]{
+a[href^=tel]{ /* remove the telephone styling for ipad/phone */
     color:inherit;
     text-decoration:none;
 }
@@ -494,6 +494,7 @@ a.sub-contain:hover {
 	position: relative;
 	background-color: white;
 	margin-top: 115px;
+	margin-bottom: -115px;
 	height: 100%;
 	width: 100%;
 }
@@ -535,68 +536,9 @@ a.sub-contain:hover {
 }
 
 
-.fadein {
-	-webkit-animation: fadein .5s ease 0 normal backwards;
-	  -moz-animation: fadein .5s ease 0 normal backwards;
-	  -o-animation: fadein .5s ease 0 normal backwards;
-	  animation: fadein .5s ease 0 normal backwards;
-	  -webkit-animation-delay: 0s;
-}
 
 
-.slidert-1 {
-	-webkit-animation: slidert .7s ease 0 normal backwards;
-	  -moz-animation: slidert .7s ease 0 normal backwards;
-	  -o-animation: slidert .7s ease 0 normal backwards;
-	  animation: slidert .7s ease 0 normal backwards;
-	  -webkit-animation-delay: 0s;
 
-}
-
-.slidert-2 {
-	-webkit-animation: slidert .7s ease 0 normal backwards;
-	  -moz-animation: slidert .7s ease 0 normal backwards;
-	  -o-animation: slidert .7s ease 0 normal backwards;
-	  animation: slidert .7s ease 0 normal backwards;
-	  -webkit-animation-delay: .1s;
-
-}
-
-.slidert-3 {
-	-webkit-animation: slidert .7s ease 0 normal backwards;
-	  -moz-animation: slidert .7s ease 0 normal backwards;
-	  -o-animation: slidert .7s ease 0 normal backwards;
-	  animation: slidert .7s ease 0 normal backwards;
-	  -webkit-animation-delay: .2s;
-
-}
-
-.slidert-4 {
-	-webkit-animation: slidert .7s ease 0 normal backwards;
-	  -moz-animation: slidert .7s ease 0 normal backwards;
-	  -o-animation: slidert .7s ease 0 normal backwards;
-	  animation: slidert .7s ease 0 normal backwards;
-	  -webkit-animation-delay: .3s;
-
-}
-
-.slidert-5 {
-	-webkit-animation: slidert .7s ease 0 normal backwards;
-	  -moz-animation: slidert .7s ease 0 normal backwards;
-	  -o-animation: slidert .7s ease 0 normal backwards;
-	  animation: slidert .7s ease 0 normal backwards;
-	  -webkit-animation-delay: .4s;
-
-}
-
-.slidert-6 {
-	-webkit-animation: slidert .7s ease 0 normal backwards;
-	  -moz-animation: slidert .7s ease 0 normal backwards;
-	  -o-animation: slidert .7s ease 0 normal backwards;
-	  animation: slidert .7s ease 0 normal backwards;
-	  -webkit-animation-delay: .5s;
-
-}
 /******************** map + contact styles **********************/
 
 
@@ -604,6 +546,8 @@ a.sub-contain:hover {
 /* map
 ========
 */
+
+
 
 .map-wrap { /*the containing element for the entire page*/
 	background-color: white;
@@ -660,7 +604,7 @@ a.sub-contain:hover {
 	display: inline;
 	float: left;
 	width: 50%;
-	height: auto; /*adjust through padding queries below*/
+	height: auto; /* adjust through padding queries below */
 	bottom: 0px;
 	background-color: #d4d4d4;
 	
@@ -673,7 +617,7 @@ a.sub-contain:hover {
 	position: fixed;
 	display: inline;
 	width: 50%;
-	height: auto; /*adjust through padding queries below*/
+	height: auto; /* adjust through padding queries below */
 	bottom: 0px;
 	right: 0px;
 	background-color: #d4d4d4;
@@ -695,7 +639,7 @@ a.map-button1, a.map-button2 {
 		 -webkit-transition: all .2s ease;
      -moz-transition: all .2s ease;
        -o-transition: all .2s ease;
-      -ms-transition: all .2s extrase;
+      -ms-transition: all .2s ease;
           transition: all .2s ease;
 }
 
@@ -758,69 +702,118 @@ a.black-text {
 
 
 /* contact
-========
+========  75   95   115
 */
 
-.contact-wrap {
-	background-color: gray;
-	height: 200px;
-	width: 100%;
-	margin-bottom: 0px;
 
+.contact-wrap {
+	position: relative;
+	background-color: #d4d4d4;
+	height: 100%;
+	width: 100%;
+	
 }
+
 
 .contact-wrap-2 {
-	background-color: #666666;
-	height: 200px;
+	position: absolute;
+	background-color: #d4d4d4;
+	bottom: 0px;
+	height: calc(100% - 115px);
 	width: 100%;
-	bottom: 0px;	
+}
+
+		@media (max-width: 480px) { /* extra small screens. */
+			.contact-wrap-2 {
+				height: calc(100% - 75px);
+			}
+		}
+
+		@media (min-width: 481px) { /* small screens. */
+			.contact-wrap-2 {
+				height: calc(100% - 95px);
+			}
+		}
+
+		@media (min-width: 768px) { /* small screens. */
+			.contact-wrap-2 {
+				height: calc(100% - 115px);
+			}
+		}
+
+
+
+.phone-link {
+	text-decoration: none;
+	width: 100%;
+	font-size: 1.8em;
+	color: white;
+	padding-right: auto;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	background-color: #D4d4d4;
+	padding-top: 14vh;
+	padding-bottom: 14vh;
+	border: 1px solid #Cacaca;
+	-webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+       -o-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+          transition: all .2s ease;
 
 }
 
-.contact-wrap-inner {
+.email-link {
+	text-decoration: none;
+	width: 100%;
+	font-size: 1.8em;
+	color: white;
+	padding-right: auto;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	background-color: #D4d4d4;
+	padding-top: 14vh;
+	padding-bottom: 14vh;
+	border: 1px solid #CCCCCC;
+
+	-webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+       -o-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+          transition: all .2s ease;
+}
+
+a.phone-link:hover, a.email-link:hover {
+	background-color: #FFD400;
+	cursor: pointer;
+	color: #666666;
+	text-decoration: none;
+
+	-webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+       -o-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+          transition: all .2s ease;
+}
+
+ .contact-descriptors {
 	position: relative;
-	height: auto;
-	width: 100%;
-	bottom: 80px;
-	background-color: blue;
-	display: none;
+	display: block;
+	font-weight: normal;
+	font-size: .5em;	
+	color: #575757;		
+	line-height: 1.6em;
+
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 50px;
+	padding-right: 50px;
+
+	padding-top: 15px;
+	max-width: 500px;
 }
-
-
-@media (max-width: 480px) { /* extra small screens. */
-	.contact-wrap {
-		margin-top: 75px;
-	}
-}
-
-@media (min-width: 481px) { /* small screens. */
-	.contact-wrap{
-		margin-top: 95px;
-	}
-}
-
-@media (min-width: 768px) { /* small screens. */
-	.contact-wrap {
-		margin-top: 115px;
-	}
-}
-
-
-@media (min-width: 992px) { /* medium screens. */
-	.contact-wrap {
-		margin-top: 115px;
-	}
-}
-
-@media (min-width: 1200px) { /* large screens. */
-	.contact-wrap {
-		top: 115px;
-	}
-}
-
-
-
-
 
 
 /********************** page content styles **********************/
@@ -861,6 +854,9 @@ a.black-text {
 	font-weight: bold;
 }
 
+a {
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
 
 p {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -1703,7 +1699,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 		@media (min-width: 481px) { /* small screens. */
 			#abo-logo {
-				width: 170px;
+				width: 158px;
 				bottom: -40px;
 			}
 		}
@@ -1714,6 +1710,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
 				bottom: -60px;
 			}
 		}
+
 
 #abo-logo:hover {
 	opacity: .3;
@@ -2453,17 +2450,7 @@ address {
 
 
 
-/************* Design Kit ****************
-
-YELLOW: #FFD400
-
-*/
-
-
-
-
-
-
+/************* Design Kit ****************/
 
 
 .rotate{
