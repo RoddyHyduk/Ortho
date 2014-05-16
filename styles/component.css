@@ -1,0 +1,94 @@
+.cbp-rfgrid {
+	margin: 0px 0 0 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	width: 100%;
+}
+
+.cbp-rfgrid li {
+	position: relative;
+	float: left;
+	overflow: hidden;
+
+}
+
+.cbp-rfgrid li a,
+.cbp-rfgrid li a {
+	display: block;
+	width: 100%;
+	cursor: pointer;
+}
+
+.cbp-rfgrid li a {
+	max-width: 100%;
+}
+
+.cbp-rfgrid li a {
+	border: 2px solid white;
+	background-color: #FFD400;
+}
+
+
+/* Example for media query: change number of items per row */
+
+
+@media screen and (min-width: 993px) {
+	.cbp-rfgrid li {
+		width: 33.33333333%; /* Fallback */
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.cbp-rfgrid li {
+		width: 33.3333333%; /* Fallback */
+		width: -webkit-calc(100% / 3);
+		width: calc(100% / 3);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.cbp-rfgrid li {
+		width: 50%; /* Fallback */
+		width: -webkit-calc(100% / 2);
+		width: calc(100% / 2);
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.cbp-rfgrid li {
+		width: 100%; /* Fallback */
+		width: -webkit-calc(100% / 1);
+		width: calc(100% / 1);
+	}
+}
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="styles/component.css" />
+
+    <script src="js/modernizr.custom.js"></script>
+
+
+
+
+
+
+
+
+<ul class="cbp-rfgrid">
+				<li><a href="#"><img src="images/cat.jpg" /><div></div></a></li>
+				<li><a href="#"><img src="images/cat.jpg" /><div></div></a></li>
+				<li><a href="#"><img src="images/cat.jpg" /><div></div></a></li>
+				<li><a href="#"><img src="images/cat.jpg" /><div></div></a></li>
+				<li><a href="#"><img src="images/cat.jpg" /><div></div></a></li>
+				<li><a href="#"><img src="images/cat.jpg" /><div></div></a></li>
+			</ul>

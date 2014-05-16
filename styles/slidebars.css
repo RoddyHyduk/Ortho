@@ -120,7 +120,7 @@ html.sb-static .sb-slidebar,
 
 @media (min-width: 768px) { /* Slidebar width on small screens. */
 	.sb-slidebar {
-		width: 55%;
+		width: 45%;
 	}
 
 	#form-slidebar {

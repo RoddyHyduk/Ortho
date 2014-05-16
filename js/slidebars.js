@@ -308,6 +308,8 @@
 			eventHandler(event, $(this)); // Handle the event.
 			close(); // Close either Slidebar.
 		});
+
+
 		
 		// Close Slidebar via Link 
 		$('.sb-slidebar a').not('.sb-disable-close').on('click', function(event) {
