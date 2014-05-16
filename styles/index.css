@@ -1539,7 +1539,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 
 /* 
-== FRAMEWORK PLUGIN
+== 2 COLUMN FRAMEWORK PLUGIN
 */
 
 
@@ -1581,18 +1581,22 @@ a.on-dkgray{ /* dr. hyduk read more button */
 }
 .span_1_of_2 {
 	width: 50%;
-	height: 350px;
+	height: auto;
 }
 
 /*  STEPPED HEIGHT QUERIES + STACK ORDER REVERSING */
 
 @media (max-width: 480px) { /* extra small screens. */
 			.span_1_of_2 {
-				   height: 270px;
+				   height: auto;
 			}
 
 			.short-block{
 				height: 180px;
+			}
+
+			.tall-block {
+					height: 270px;
 			}
 		}
 
@@ -1612,21 +1616,21 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 		@media (min-width: 768px) { /* small screens. */
 			.span_1_of_2 {
-				   height: 350px;
+				   height: auto;
 			}
 		}
 
 		@media (min-width: 992px) { /* medium screens */
 			
 			.span_1_of_2 {
-				   height: 400px;
+				   height: auto;
 			}
 		}
 
 		@media (min-width: 1200px) { /* large screens */
 			
 			.span_1_of_2 {
-				   height: 450px;
+				   height: auto;
 			}
 		}
 
@@ -1909,6 +1913,8 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 
 
+
+
 /* images - team
 ========
 */
@@ -1931,11 +1937,11 @@ a.on-dkgray{ /* dr. hyduk read more button */
 		max-width: auto;
 		height: auto;
 
-
 }
 
 #team-img-2 {
-		background-image: url('images/test-6.png');
+		max-width: auto;
+		height: auto;
 }
 
 #team-img-3 {
