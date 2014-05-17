@@ -6,10 +6,15 @@ html,body {
 	margin: 0px;
 }
 
-a[href^=tel]{ /* remove the telephone styling for ipad/phone */
-    color:inherit;
+
+a[href^=tel]{ 
+    color: inherit;
     text-decoration:none;
-}
+} 
+
+a.phone-link[href^=tel]{ 
+    color: white;
+} 
 
 /***************** navigation styles ******************/
 
@@ -194,7 +199,6 @@ header {
 	background-color: white;
 	z-index: 50;
 	box-shadow: 0px 1px 0px 0px rgba(100, 100, 100, 0.1);
-
 	 -webkit-transition: all .2s ease;
      -moz-transition: all .2s ease;
        -o-transition: all .2s ease;
@@ -335,7 +339,7 @@ a.sub-contain:hover {
 }
 
 .top-icons:hover {
-	opacity: .9;
+	opacity: .8;
 	cursor: pointer;
 }
 
@@ -808,11 +812,11 @@ a.phone-link:hover, a.email-link:hover {
 
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 60px;
+	padding-right: 60px;
 
 	padding-top: 15px;
-	max-width: 500px;
+	max-width: 430px;
 }
 
 
@@ -1006,7 +1010,7 @@ h4{ /*footer pages subheading*/
 
 
 .maxw {
-	max-width: 655px;
+	max-width: 660px;
 	padding-left: 50px;
 	padding-right: 50px;
 }
@@ -1230,9 +1234,11 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 .sub-bar { /* section nav bars on sub-scroll pages */
 	padding: 30px;
+	width: auto;
 	display: block;
 	background-color: #666666;
 	text-align: center;
+	border-bottom: 1px solid #5a5a5a;
 }
 
 
@@ -1528,6 +1534,36 @@ a.on-dkgray{ /* dr. hyduk read more button */
 		}
 
 
+.txtblock-6 { /* for plain text under B & A subheadings */
+	padding-top: 50px;
+	padding-bottom: 75px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+		@media (max-width: 480px) { /* extra small screens. */
+			.txtblock-6 {
+				padding-top: 35px;
+				padding-bottom: 50px;
+				}
+			}
+
+		@media (min-width: 481px) { /* small screens. */
+			.txtblock-6  {
+				padding-top: 45px;
+				padding-bottom: 70px;
+				}
+			}
+
+		@media (min-width: 768px) { /* small screens. */
+				.txtblock-6 {
+				padding-top: 50px;
+				padding-bottom: 75px;
+				}
+			}
+
+
 
 /* column block styles 
 ========
@@ -1535,7 +1571,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 
 /* 
-== 2 COLUMN FRAMEWORK PLUGIN
+== 2 COLUMN FRAMEWORK for team page
 */
 
 
@@ -1591,7 +1627,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
 				height: 180px;
 			}
 
-			.tall-block {
+			.tall-block { 
 					height: 270px;
 			}
 		}
@@ -1655,33 +1691,86 @@ a.on-dkgray{ /* dr. hyduk read more button */
 */
 
 
-
-
+.col-left {
+	background-color: white;
+}
 
 
 .staff-title {
-	padding: 9% 0px 15px 9%;
+	padding-top: 0%;
+	padding-bottom: 15px;
 	text-align: left;
 }
 
 .staff-descriptors {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-weight: bold;
+	letter-spacing: .02em;
 	text-align: left;
-	padding-left: 9%;
+	line-height: 1.5em;
 	padding-top: 0px;
 }
 
+		@media (max-width: 480px) { /* extra small screens. */
+			.staff-descriptors {
+				line-height: 1.3em;
+			}
+		}
 
-.col-left {
-	background-color: white;
+		@media (min-width: 481px) { /* small screens. */
+				.staff-descriptors {
+				line-height: 1.4em;
+			}
+		}
+
+		@media (min-width: 768px) { /* small screens. */
+			.staff-descriptors {
+				line-height: 1.5em;
+			}
+		}
+
+
+.left-constrain {
+	float: right;
+	width: 320px;
 }
+
+
+		@media (max-width: 480px) { /* extra small screens. */
+			.left-constrain {
+				float: left;
+				width: auto;
+				padding: 9% 0px 15px 9%;
+			}
+			
+		}
+
+		@media (min-width: 481px) { /* small screens. */
+			.left-constrain {
+				float: left;
+				width: auto;
+				padding: 9% 0px 15px 14%;
+			}
+		}
+
+		@media (min-width: 768px) { /* small screens. */
+			.left-constrain {
+				float: right;
+				width: 330px;
+			}
+		}
+
+.right-pad {
+	padding: 9% 0px 15px 9%; /* these values should be the same as above queries */
+
+
+}
+
 
 #abo-logo {
 	width: 180px;
 	position: relative;
 	bottom: -40px;
-	left: 9%;
 
 	 -webkit-transition: all .2s ease;
      -moz-transition: all .2s ease;
@@ -1725,6 +1814,110 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 
 
+/* Braces+Aligners styles 
+========
+*/
+
+
+
+
+
+.benefits-list {
+	padding-top: 12px;
+	padding-bottom: 5px;
+}
+
+p.small-text {
+
+	font-size: .8em;
+	letter-spacing: .01em
+}
+
+p.para {
+	line-height: 1.45em;
+	padding-right: 30px;
+}
+
+
+
+
+.ba-title {
+	padding-left: 29px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	text-align: left;
+}
+
+.plus-icon {
+	position: absolute;
+	width: 39px;
+	margin-top: 16px;
+	margin-left: -20px;
+
+	opacity: .6;
+}
+
+.clock-icon {
+	position: absolute;
+	width: 35px;
+	margin-top: 20px;
+	margin-left: -16px;
+
+	opacity: .6;
+}
+
+	@media (max-width: 480px) { /* extra small screens. */
+			.clock-icon {
+				margin-top: 14px;
+				margin-left: -11px;
+				width: 32px;
+			}
+
+			.plus-icon {
+				margin-top: 12px;
+				margin-left: -15px;
+				width: 36px;
+			}
+		}
+
+		@media (min-width: 481px) { /* small screens. */
+			.clock-icon {
+				margin-top: 16px;
+			}
+
+			.plus-icon {
+				margin-top: 13px;
+			}
+		
+		}
+
+		@media (min-width: 768px) { /* small screens. */
+			.clock-icon {
+				margin-top: 20px;
+			}
+
+			.plus-icon {
+				margin-top: 16px;
+			}
+		
+		}
+
+
+
+
+.title-and-icon-wrap {
+	display: inline;
+	position: relative;
+	height: 20px;
+	width: auto;
+	margin-top: 12%;
+
+}
+
+.indent-2 {
+	padding-left: 30px;
+	border-left: 0px dotted #e6e6e6;
+}
 
 
 
@@ -1791,6 +1984,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
 	padding-top: 12px;
 	padding-bottom: 5px;
 }
+
 
 .indent {
 	padding-left: 30px;
@@ -1983,7 +2177,7 @@ footer {
 
 #footer-centering {
 	position: relative;
-	max-width: 740px;
+	max-width: 730px;
 	margin-left: auto;
 	margin-right: auto;
 }
