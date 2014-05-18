@@ -328,7 +328,7 @@ a.sub-contain:hover {
 	padding: 10px;
 	padding-left: 50px;
 	margin-right: 20px;
-	opacity: .4;
+	opacity: .8;
 	z-index: 1000;
 
 	 -webkit-transition: all .2s ease;
@@ -339,7 +339,7 @@ a.sub-contain:hover {
 }
 
 .top-icons:hover {
-	opacity: .8;
+	opacity: .3;
 	cursor: pointer;
 }
 
@@ -431,7 +431,6 @@ a.sub-contain:hover {
 				margin-right: 20px;
 				padding: 10px;
 				padding-left: 50px;
-				opacity: .4;
 			}
 
 		}
@@ -748,27 +747,16 @@ a.black-text {
 
 
 .phone-link {
-	text-decoration: none;
-	width: 100%;
-	font-size: 1.8em;
-	color: white;
-	padding-right: auto;
-	font-weight: bold;
-	display: block;
-	text-align: center;
-	background-color: #D4d4d4;
-	padding-top: 14vh;
-	padding-bottom: 14vh;
-	border: 1px solid #Cacaca;
-	-webkit-transition: all .2s ease;
-     -moz-transition: all .2s ease;
-       -o-transition: all .2s ease;
-      -ms-transition: all .2s ease;
-          transition: all .2s ease;
-
+	border-bottom:;
 }
 
 .email-link {
+
+	border-top: 1px solid #c1c1c1;
+	border-bottom: 1px solid #c1c1c1;
+}
+
+.phone-link,.email-link {
 	text-decoration: none;
 	width: 100%;
 	font-size: 1.8em;
@@ -780,14 +768,77 @@ a.black-text {
 	background-color: #D4d4d4;
 	padding-top: 14vh;
 	padding-bottom: 14vh;
-	border: 1px solid #CCCCCC;
+	overflow: hidden;
 
-	-webkit-transition: all .2s ease;
+		-webkit-transition: all .2s ease;
      -moz-transition: all .2s ease;
        -o-transition: all .2s ease;
       -ms-transition: all .2s ease;
           transition: all .2s ease;
 }
+
+
+ .contact-descriptors {
+	position: relative;
+	display: block;
+	font-weight: normal;
+	font-size: .5em;	
+	color: #828282;		
+	line-height: 1.6em;
+
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 40px;
+	padding-right: 40px;
+
+	padding-top: 15px;
+	max-width: 380px;
+}
+
+	@media (max-width: 480px) { /* extra small screens. */
+			.phone-link, .email-link{
+				font-size: 1.4em;
+				padding-top: 11vh;
+				padding-bottom: 11vh;
+			}
+
+			.contact-descriptors {
+				font-size: .6em;
+				line-height: 1.4em;
+				padding-top: 10px;
+				max-width: 450px;
+			}
+		}
+
+		@media (min-width: 481px) { /* small screens. */
+				.phone-link, .email-link{
+				font-size: 1.7em;
+				padding-top: 13vh;
+				padding-bottom: 13vh;
+			}
+
+			.contact-descriptors {
+				font-size: .5em;
+				line-height: 1.6em;
+				padding-top: 13px;
+				max-width: 430px;
+			}
+		}
+
+		@media (min-width: 768px) { /* small screens. */
+				.phone-link, .email-link{
+				font-size: 1.8em;
+				padding-top: 14vh;
+				padding-bottom: 14vh;
+			}
+
+			.contact-descriptors {
+				font-size: .5em;
+				line-height: 1.6em;
+				padding-top: 15px;
+				max-width: 380px;
+			}
+		}
 
 a.phone-link:hover, a.email-link:hover {
 	background-color: #FFD400;
@@ -802,22 +853,6 @@ a.phone-link:hover, a.email-link:hover {
           transition: all .2s ease;
 }
 
- .contact-descriptors {
-	position: relative;
-	display: block;
-	font-weight: normal;
-	font-size: .5em;	
-	color: #575757;		
-	line-height: 1.6em;
-
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 60px;
-	padding-right: 60px;
-
-	padding-top: 15px;
-	max-width: 430px;
-}
 
 
 /********************** page content styles **********************/
@@ -1177,7 +1212,7 @@ div.topbar h1 {
 .subnav-contain {
 	text-align: center;
 	margin-top: -20px;
-	padding-bottom: 60px;
+	padding-bottom: 70px;
 }
 
 .subnav-contain li {
@@ -1187,10 +1222,32 @@ div.topbar h1 {
 	margin: 1%;
 	border: 1px solid #CCCCCC;
 	border-radius: 1px;
+	-webkit-transition: all .4s ease;
+     -moz-transition: all .4s ease;
+       -o-transition: all .4s ease;
+      -ms-transition: all .4s ease;
+          transition: all .4s ease;
 }
 
 .subnav-contain li:hover {
-	border: 1px solid #CCCCCC;
+	margin-bottom: 30px;
+	border: 1px solid #f1f1f1;
+
+		 -webkit-transition: all .3s ease;
+     -moz-transition: all .3s ease;
+       -o-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+          transition: all .3s ease;
+}
+
+#scroll-list:hover {
+
+
+	   -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+       -o-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+          transition: all .2s ease;
 }
 
 .subnav-contain a {
@@ -1206,23 +1263,27 @@ div.topbar h1 {
 	text-decoration: none;
 	background-color: none;
 
-	 -webkit-transition: all .2s ease;
-     -moz-transition: all .2s ease;
-       -o-transition: all .2s ease;
-      -ms-transition: all .2s ease;
-          transition: all .2s ease;
+
+	 -webkit-transition: all .4s ease;
+     -moz-transition: all .4s ease;
+       -o-transition: all .4s ease;
+      -ms-transition: all .4s ease;
+          transition: all .4s ease;
 
 }
 
 .subnav-contain a:hover {
 	background-color: #CCCCCC;
-	color: white ;
+	color: #666666;
+		
+	
 
-	 -webkit-transition: all .2s ease;
-     -moz-transition: all .2s ease;
-       -o-transition: all .2s ease;
-      -ms-transition: all .2s ease;
-          transition: all .2s ease;
+
+	 -webkit-transition: all .3s ease;
+     -moz-transition: all .3s ease;
+       -o-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+          transition: all .3s ease;
 }
 
 
@@ -1233,7 +1294,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 
 .sub-bar { /* section nav bars on sub-scroll pages */
-	padding: 30px;
+	padding: 18px;
 	width: auto;
 	display: block;
 	background-color: #666666;
@@ -1244,19 +1305,19 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 		@media (max-width: 480px) { /* extra small screens. */
 			.sub-bar {
-				padding: 20px;
+				padding: 12px;
 			}
 		}
 
 		@media (min-width: 481px) { /* small screens. */
 			.sub-bar {
-				padding: 25px;
+				padding: 14px;
 			}
 		}
 
 		@media (min-width: 768px) { /* small screens. */
 			.sub-bar {
-			padding: 30px;
+			padding: 18px;
 			}
 		}
 
@@ -1860,8 +1921,31 @@ p.small-text {
 
 p.para {
 	line-height: 1.45em;
+	padding-right: 5px;
+}
+
+		@media (max-width: 480px) { /* extra small screens. */
+			p.para {
+
+	padding-right: 30px;
+}
+}
+			
+
+		@media (min-width: 481px) { /* small screens. */
+			p.para {
+	
 	padding-right: 75px;
 }
+}
+
+		@media (min-width: 768px) { /* small screens. */
+			p.para {
+	
+	padding-right: 5px;
+}	
+}
+
 
 
 
@@ -1880,7 +1964,7 @@ p.para {
 	margin-top: 10px;
 	margin-left: -15px;
 
-	opacity: .6;
+	opacity: .3;
 }
 
 .clock-icon {
@@ -1889,7 +1973,7 @@ p.para {
 	margin-top: 12px;
 	margin-left: -11px;
 
-	opacity: .6;
+	opacity: .3;
 }
 
 	@media (max-width: 480px) { /* extra small screens. */
@@ -2038,6 +2122,19 @@ p.para {
 }
 
 
+/* treatment page styles
+========
+*/
+
+#num-overlay {
+	padding-top: 80px;
+	font-size: 10em;
+	letter-spacing: .03em;
+
+}
+
+
+
 
 /* footer page block styles 
 ========
@@ -2156,7 +2253,7 @@ p.para {
 
 		@media (max-width: 480px) { /* extra small screens. */
 			.imgblock-2 {
-				height: 200px;
+				height: 225px;
 			}
 		}
 
@@ -2224,7 +2321,7 @@ p.para {
 
 
 
-/* images - team
+/* images - team  (UNUSED************)
 ========
 */
 
@@ -2267,9 +2364,24 @@ p.para {
 
 
 
+/* images - Treatment 
+========
+*/
 
 
 
+#treatment-img-1 {
+		background-image: url('images/test-10.png');
+		overflow: hidden;	
+		background-repeat: no-repeat;
+		background-position: fixed;
+		background-position: center;
+		
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+}
 
 
 /******************** footer styles **********************/
