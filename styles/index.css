@@ -475,6 +475,28 @@ a.sub-contain:hover {
 		}
 
 
+#contact-icon {
+	opacity: .3;
+
+	 -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+       -o-transition: all .2s ease;
+      -ms-transition: all .2s extrase;
+          transition: all .2s ease;
+}
+
+
+.maps-icon {
+	opacity: .3;
+
+	 -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+       -o-transition: all .2s ease;
+      -ms-transition: all .2s extrase;
+          transition: all .2s ease;
+}
+
+
 
 
 
@@ -1247,27 +1269,6 @@ div.topbar h1 {
           transition: all .4s ease;
 }
 
-.subnav-contain li:hover {
-	margin-bottom: 35px;
-	border: 1px solid #f1f1f1;
-
-		 -webkit-transition: all .3s ease;
-     -moz-transition: all .3s ease;
-       -o-transition: all .3s ease;
-      -ms-transition: all .3s ease;
-          transition: all .3s ease;
-}
-
-#scroll-list:hover {
-
-
-	   -webkit-transition: all .2s ease;
-     -moz-transition: all .2s ease;
-       -o-transition: all .2s ease;
-      -ms-transition: all .2s ease;
-          transition: all .2s ease;
-}
-
 .subnav-contain a {
 	display: block;
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -1290,13 +1291,24 @@ div.topbar h1 {
 
 }
 
+.subnav-contain li:hover {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 35px;
+
+		 -webkit-transition: all .3s ease;
+     -moz-transition: all .3s ease;
+       -o-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+          transition: all .3s ease;
+}
+
+
+
+
+
 .subnav-contain a:hover {
 	background-color: #CCCCCC;
 	color: #666666;
-		
-	
-
-
 	 -webkit-transition: all .3s ease;
      -moz-transition: all .3s ease;
        -o-transition: all .3s ease;
@@ -1775,7 +1787,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 
 
-/*for braces & aligners overriding stack breakpoints*/
+/* for braces & aligners overriding stack breakpoints*/
 
 			@media (min-width: 481px) { /* small screens. */
 				.span_full_tablet{
@@ -1946,25 +1958,22 @@ p.para {
 
 		@media (max-width: 480px) { /* extra small screens. */
 			p.para {
-
-	padding-right: 30px;
-}
-}
+				padding-right: 30px;
+			}
+		}
 			
 
 		@media (min-width: 481px) { /* small screens. */
 			p.para {
-	
-	padding-right: 75px;
-}
-}
+				padding-right: 75px;
+			}
+		}
 
 		@media (min-width: 768px) { /* small screens. */
 			p.para {
-	
-	padding-right: 5px;
-}	
-}
+				padding-right: 5px;
+			}	
+		}
 
 
 
@@ -2154,7 +2163,7 @@ p.para {
 
 
 
-@media (max-width: 480px) { /* extra small screens. */
+		@media (max-width: 480px) { /* extra small screens. */
 			#num-overlay {
 				padding-top: 53px;
 				font-size: 4.5em;
@@ -2285,8 +2294,27 @@ p.para {
 }
 
 
+.txt-block {
+	padding-top: 55px;
+}
 
+		@media (max-width: 480px) { /* extra small screens. */
+			.txt-block {
+				padding-top: 35px;
+			}
+		}
 
+		@media (min-width: 481px) { /* small screens. */
+			.txt-block {
+				padding-top: 48px;
+			}
+		}
+
+		@media (min-width: 768px) { /* small screens. */
+			.txt-block {
+				padding-top: 55px;
+			}
+		}
 
 
 
@@ -2880,10 +2908,10 @@ address {
 /*fade in and up*/
 
 .fadein {
-	-webkit-animation: fadein .5s ease 0 normal backwards;
-	  -moz-animation: fadein .5s ease 0 normal backwards;
-	  -o-animation: fadein .5s ease 0 normal backwards;
-	  animation: fadein .5s ease 0 normal backwards;
+	-webkit-animation: fadein .6s ease 0 normal backwards;
+	  -moz-animation: fadein .6s ease 0 normal backwards;
+	  -o-animation: fadein .6s ease 0 normal backwards;
+	  animation: fadein .6s ease 0 normal backwards;
 	  -webkit-animation-delay: 0s;
 }
 
@@ -3030,41 +3058,3 @@ address {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/************* Design Kit ****************/
-
-
-.rotate{
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-     
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-     
-    overflow:hidden;
- 
-    }  
- 
-.rotate:hover  
-{
-    -webkit-transform:rotate(-90deg)
-    -moz-transform:rotate(-90deg);
-    -o-transform:rotate(-90deg);
-}  
