@@ -1193,6 +1193,24 @@ div.topbar h1 {
 	height: 100px;
 }
 
+		@media (max-width: 480px) { /* extra small screens. */
+			.s-1 {	
+				height: 50px;
+			}
+		}
+
+		@media (min-width: 481px) { /* small screens. */
+			.s-1 {
+				height: 80px;
+			}
+		}
+
+		@media (min-width: 768px) { /* small screens. */
+			.s-1 {
+				height: 100px;
+			}
+		}
+
 
 #panel { /* JQUERY panel slide Dr Hyduk Bio */
 	height: auto;
@@ -1230,7 +1248,7 @@ div.topbar h1 {
 }
 
 .subnav-contain li:hover {
-	margin-bottom: 30px;
+	margin-bottom: 35px;
 	border: 1px solid #f1f1f1;
 
 		 -webkit-transition: all .3s ease;
@@ -1294,7 +1312,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 
 .sub-bar { /* section nav bars on sub-scroll pages */
-	padding: 18px;
+	padding: 14px;
 	width: auto;
 	display: block;
 	background-color: #666666;
@@ -1311,13 +1329,13 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 		@media (min-width: 481px) { /* small screens. */
 			.sub-bar {
-				padding: 14px;
+				padding: 13px;
 			}
 		}
 
 		@media (min-width: 768px) { /* small screens. */
 			.sub-bar {
-			padding: 18px;
+			padding: 14px;
 			}
 		}
 
@@ -1762,6 +1780,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
 			@media (min-width: 481px) { /* small screens. */
 				.span_full_tablet{
 					  width: 100%;
+
 				}
 
 			}
@@ -1771,6 +1790,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
 					   width: 50%;
 				}
 			}
+
 
 /* 
 == END FRAMEWORK PLUGIN
@@ -2130,8 +2150,145 @@ p.para {
 	padding-top: 80px;
 	font-size: 10em;
 	letter-spacing: .03em;
-
 }
+
+
+
+@media (max-width: 480px) { /* extra small screens. */
+			#num-overlay {
+				padding-top: 53px;
+				font-size: 4.5em;
+				letter-spacing: .01em;
+			}
+		}
+
+		@media (min-width: 481px) { /* small screens. */
+			#num-overlay {
+				padding-top: 57px;
+				font-size: 7.5em;
+				letter-spacing: .02em;
+			}
+		}
+
+		@media (min-width: 768px) { /* small screens. */
+			#num-overlay {
+				padding-top: 80px;
+				font-size: 10em;
+				letter-spacing: .03em;
+			}
+		}
+
+
+
+
+
+.section-2 {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col-2 {
+	display: block;
+	float:left;
+	margin: 7% 0% 1% 5%;
+}
+.col-2:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group-2:before,
+.group-2:after {
+	content:"";
+	display:table;
+}
+.group-2:after {
+	clear:both;
+}
+.group-2 {
+    zoom:1; /* For IE 6/7 */
+}
+                                               
+					
+/*  GRID OF TWO  */
+.span_2_of_2-2 {
+	width: 100%;
+}
+.span_1_of_2-2 {
+	width: 47.5%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col-2 { 
+		margin: 9% 0 5% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2-2 {
+		width: 100%; 
+	}
+	.span_1_of_2-2 {
+		width: 100%;
+	}
+}
+
+
+
+.phase-wrap {
+	position: relative;
+	width: auto;
+	height: auto;
+}
+
+.phase-tag {
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	font-weight: bold;
+	color: white;
+	z-index: 100;
+}
+
+
+
+.phase-img {
+	max-width: 100%;
+	height: auto;
+}
+
+.phase-title {
+	padding-left: 20px;
+	text-align: left;
+	font-size: 1.3em;
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+
+.phase-descriptors-1 {
+	padding-left: 20px;
+	text-align: left;
+	font-size: 1.3em;
+	letter-spacing: .01em;
+	line-height: 1.2em;
+	color: #FFD400;
+	font-weight: bold;
+}
+
+.phase-descriptors-2 {
+	padding-left: 20px;
+	text-align: left;
+	color: #666666;
+}
+
+
+
+
+
+
 
 
 
@@ -2372,6 +2529,19 @@ p.para {
 
 #treatment-img-1 {
 		background-image: url('images/test-10.png');
+		overflow: hidden;	
+		background-repeat: no-repeat;
+		background-position: fixed;
+		background-position: center;
+		
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+}
+
+#treatment-img-2 {
+		background-image: url('images/test-11.png');
 		overflow: hidden;	
 		background-repeat: no-repeat;
 		background-position: fixed;
