@@ -16,6 +16,88 @@ a.phone-link[href^=tel]{
     color: white;
 } 
 
+
+/* images
+========
+*/
+
+
+#about-img-1 {
+	overflow: hidden;	
+		background-image: url('images/test-1.png');
+		background-repeat: no-repeat;
+		background-position: fixed;
+		background-position: center;
+		
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+}
+
+#gs-img-1 {
+	overflow: hidden;	
+		background-image: url('images/test-2.png');
+		background-repeat: no-repeat;
+		background-position: fixed;
+		background-position: center;
+		
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+}
+
+#gs-img-2 {
+	overflow: hidden;	
+		background-image: url('images/test-3.png');
+		background-repeat: no-repeat;
+		background-position: fixed;
+		background-position: center;
+		
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+}
+
+
+
+
+
+/* images - Treatment 
+========
+*/
+
+
+
+#treatment-img-1 {
+		background-image: url('images/test-10.png');
+		overflow: hidden;	
+		background-repeat: no-repeat;
+		background-position: fixed;
+		background-position: center;
+		
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+}
+
+#treatment-img-2 {
+		background-image: url('images/test-11.png');
+		overflow: hidden;	
+		background-repeat: no-repeat;
+		background-position: fixed;
+		background-position: center;
+		
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+}
+
+
 /***************** navigation styles ******************/
 
 nav.sb-slidebar {
@@ -86,8 +168,6 @@ a.nav {
 
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
-	
-
 
 		 -webkit-transition: all .25s ease;
      -moz-transition: all .25s ease;
@@ -98,7 +178,7 @@ a.nav {
 
 a.nav:hover {
 	background-color: #FFD400;
-	color: #4f4f4f;
+	color: #666666;
 
 		 -webkit-transition: all .25s ease;
      -moz-transition: all .25s ease;
@@ -328,7 +408,7 @@ a.sub-contain:hover {
 	padding: 10px;
 	padding-left: 50px;
 	margin-right: 20px;
-	opacity: .8;
+	opacity: .9;
 	z-index: 1000;
 
 	 -webkit-transition: all .2s ease;
@@ -825,8 +905,8 @@ a.black-text {
 			}
 
 			.contact-descriptors {
-				font-size: .6em;
-				line-height: 1.4em;
+				font-size: .58em;
+				line-height: 1.2em;
 				padding-top: 10px;
 				max-width: 450px;
 			}
@@ -1119,7 +1199,7 @@ h4{ /*footer pages subheading*/
 	background-color: #666666;
 	opacity: .2;
 	margin-top: 0px;
-	margin-bottom: 60px;
+	margin-bottom: 80px;
 }
 
 .topbar {
@@ -1212,7 +1292,7 @@ div.topbar h1 {
 
 .s-1 { /*spacer 1 (used in footer pages)*/
 	width: 100%;
-	height: 100px;
+	height: 90px;
 }
 
 		@media (max-width: 480px) { /* extra small screens. */
@@ -1223,13 +1303,13 @@ div.topbar h1 {
 
 		@media (min-width: 481px) { /* small screens. */
 			.s-1 {
-				height: 80px;
+				height: 75px;
 			}
 		}
 
 		@media (min-width: 768px) { /* small screens. */
 			.s-1 {
-				height: 100px;
+				height: 90px;
 			}
 		}
 
@@ -1490,8 +1570,8 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 
 .txtblock-3 { /* for plain text under H2 headings */
-	padding-top: 30px;
-	padding-bottom: 60px;
+	padding-top: 35px;
+	padding-bottom: 85px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -1499,19 +1579,19 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 		@media (max-width: 480px) { /* extra small screens. */
 			.txtblock-3 {
-				padding-bottom: 75px;
+				padding-bottom: 50px;
 				}
 			}
 
 		@media (min-width: 481px) { /* small screens. */
 			.txtblock-3  {
-				padding-bottom: 95px;
+				padding-bottom: 75px;
 				}
 			}
 
 		@media (min-width: 768px) { /* small screens. */
 				.txtblock-3 {
-				padding-bottom: 95px;
+				padding-bottom: 85px;
 				}
 			}
 
@@ -2270,15 +2350,15 @@ p.para {
 }
 
 .phase-title {
-	padding-left: 20px;
+	padding-left: 18px;
 	text-align: left;
-	font-size: 1.3em;
+	line-height: 1.1em;
 	padding-top: 15px;
 	padding-bottom: 20px;
 }
 
 .phase-descriptors-1 {
-	padding-left: 20px;
+	padding-left: 18px;
 	text-align: left;
 	font-size: 1.3em;
 	letter-spacing: .01em;
@@ -2317,6 +2397,98 @@ p.para {
 		}
 
 
+/* orthodontics page styles
+========
+*/
+
+/*  SECTIONS  */
+.section-4 {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col-4 {
+	display: block;
+	float:left;
+	margin: 0% 0 0% 0%;
+	margin-bottom: -10px;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group-4:before,
+.group-4:after {
+	content:"";
+	display:table;
+}
+.group-4:after {
+	clear:both;
+}
+.group-4 {
+    zoom:1; /* For IE 6/7 */
+}
+                                               
+					
+/*  GRID OF FOUR  */
+.span_4_of_4-4 {
+	width: 100%;
+}
+.span_3_of_4-4 {
+	width: 75%;
+}
+.span_2_of_4-4 {
+	width: 50%;
+}
+.span_1_of_4-4 {
+	width: 25%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col-4 { 
+		margin: 0% 0 0% 0%;
+		margin-bottom: -10px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_4_of_4-4 {
+		width: 50%; 
+	}
+	.span_3_of_4-4 {
+		width: 50%; 
+	}
+	.span_2_of_4-4 {
+		width: 50%; 
+	}
+	.span_1_of_4-4 {
+		width: 50%;
+	}
+}
+
+
+
+.ortho-wrap {
+	position: relative;
+	height: auto;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.orthodontics-img {
+	position: relative;
+	max-width: 100%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+}
+
+
 
 
 
@@ -2324,6 +2496,13 @@ p.para {
 /* footer page block styles 
 ========
 */
+
+.footer-page {
+	width: auto;
+	height: auto;
+	position: relative;
+}
+
 
 .left-align-wrap { /*content wrap for left-aligned footer pages*/
 	padding: 35px;
@@ -2458,128 +2637,104 @@ p.para {
 
 
 
-/* images
+/* universal nav block styles 
 ========
 */
 
 
-#about-img-1 {
-	overflow: hidden;	
-		background-image: url('images/test-1.png');
-		background-repeat: no-repeat;
-		background-position: fixed;
-		background-position: center;
-		
-		-webkit-background-size: cover;
-	  	-moz-background-size: cover;
-	  	-o-background-size: cover;
-	  	background-size: cover;
-}
-
-#gs-img-1 {
-	overflow: hidden;	
-		background-image: url('images/test-2.png');
-		background-repeat: no-repeat;
-		background-position: fixed;
-		background-position: center;
-		
-		-webkit-background-size: cover;
-	  	-moz-background-size: cover;
-	  	-o-background-size: cover;
-	  	background-size: cover;
-}
-
-#gs-img-2 {
-	overflow: hidden;	
-		background-image: url('images/test-3.png');
-		background-repeat: no-repeat;
-		background-position: fixed;
-		background-position: center;
-		
-		-webkit-background-size: cover;
-	  	-moz-background-size: cover;
-	  	-o-background-size: cover;
-	  	background-size: cover;
+.unav-wrap {
 }
 
 
+.unav-image {
+	position: relative;
+	width: 50%;
+	float: left;
+	display: block;
+	height: auto;
+	margin-right: 19px;
+	z-index: 100;
+}
+
+a.unav-button {
+	position: relative;
+	display: block;
+	float: right;
+	background-color: ;
+	text-decoration: none;
 
 
 
-/* images - team  (UNUSED************)
-========
-*/
+	 -webkit-transition: all .3s ease;
+     -moz-transition: all .3s ease;
+       -o-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+          transition: all .3s ease;
+}
 
-#team-img-1, #team-img-2, #team-img-3, #team-img-4, #team-img-5 {
-		overflow: hidden;	
-
-		background-repeat: no-repeat;
-		background-position: fixed;
-		background-position: center;
-		
-		-webkit-background-size: cover;
-	  	-moz-background-size: cover;
-	  	-o-background-size: cover;
-	  	background-size: cover;
+a.button-top {
 
 }
 
-#team-img-1 {
-		max-width: auto;
-		height: auto;
-
+li.unav-list {
+	height: 100%;
+	width: 100%;
 }
 
-#team-img-2 {
-		max-width: auto;
-		height: auto;
+.unav-text {
+	text-align: left;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1em;
+	padding-top: 18px;
+	color: #666666;
+	font-weight: bold;
+	letter-spacing: .01em;
+	border-top: 1px solid #f1f1f1;
 }
 
-#team-img-3 {
-		background-image: url('images/test-7.png');
-}
-
-#team-img-4 {
-		background-image: url('images/test-8.png');
-}
-
-#team-img-5 {
-		background-image: url('images/test-9.png');
+a.unav-button:hover {
+	background-color: #FFD400;
+	 -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+       -o-transition: all .2s ease;
+      -ms-transition: all .2s ease;
+          transition: all .2s ease;
 }
 
 
+@media (max-width: 480px) { /* extra small screens. */
+			.unav-text {
+				font-size: .9em;
+				padding-top: 3%;
+			}
 
-/* images - Treatment 
-========
-*/
+			.unav-image {
+				margin-right: 10px;
+			}
+		}
 
+		@media (min-width: 481px) { /* small screens. */
+			.unav-text {
+				font-size: 1em;
+				padding-top: 15px;
+			}
 
+			.unav-image {
+				margin-right: 16px;
+			}
+		}
 
-#treatment-img-1 {
-		background-image: url('images/test-10.png');
-		overflow: hidden;	
-		background-repeat: no-repeat;
-		background-position: fixed;
-		background-position: center;
-		
-		-webkit-background-size: cover;
-	  	-moz-background-size: cover;
-	  	-o-background-size: cover;
-	  	background-size: cover;
-}
+		@media (min-width: 768px) { /* small screens. */
+			.unav-text {
+				font-size: 1em;
+				padding-top: 20px;
+			}
 
-#treatment-img-2 {
-		background-image: url('images/test-11.png');
-		overflow: hidden;	
-		background-repeat: no-repeat;
-		background-position: fixed;
-		background-position: center;
-		
-		-webkit-background-size: cover;
-	  	-moz-background-size: cover;
-	  	-o-background-size: cover;
-	  	background-size: cover;
-}
+			.unav-image {
+				margin-right: 19px;
+			}
+		}
 
 
 /******************** footer styles **********************/
@@ -2647,7 +2802,7 @@ footer {
 
 #up-arrow:hover {
 	cursor: pointer;
-	opacity: .9;
+	opacity: .7;
 	 -webkit-transition: all .1s ease;
      -moz-transition: all .1s ease;
        -o-transition: all .1s ease;
