@@ -254,7 +254,7 @@ a.nav:hover {
 			 a.nav {
 				padding-top: 30px;
 				padding-bottom: 38px;
-				padding-left: 46px;
+				padding-left: 40px;
 				font-size: 1.2em;
 			}
 
@@ -1373,7 +1373,7 @@ div.topbar h1 {
 
 .subnav-contain li:hover {
 	border: 1px solid #f1f1f1;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 
 		 -webkit-transition: all .3s ease;
      -moz-transition: all .3s ease;
@@ -1404,7 +1404,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 
 .sub-bar { /* section nav bars on sub-scroll pages */
-	padding: 14px;
+	padding: 17px;
 	width: auto;
 	display: block;
 	background-color: #666666;
@@ -1421,13 +1421,13 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 		@media (min-width: 481px) { /* small screens. */
 			.sub-bar {
-				padding: 13px;
+				padding: 14px;
 			}
 		}
 
 		@media (min-width: 768px) { /* small screens. */
 			.sub-bar {
-			padding: 14px;
+			padding: 17px;
 			}
 		}
 
@@ -1735,6 +1735,35 @@ a.on-dkgray{ /* dr. hyduk read more button */
 			}
 
 
+.txtblock-7 { /* text overlay large image adult ortho block*/
+	height: auto;
+	width: 100%;
+	padding-top: 115px;
+	padding-bottom: 115px;
+	text-align: center;
+}
+
+		@media (max-width: 480px) { /* extra small screens. */
+			.txtblock-7 {
+				padding-top: 55px;
+				padding-bottom: 55px;
+			}
+		}
+
+		@media (min-width: 481px) { /* small screens. */
+			.txtblock-7 {
+				padding-top: 85px;
+				padding-bottom: 85px;
+			}
+		}
+
+		@media (min-width: 768px) { /* small screens. */
+			.txtblock-7 {
+				padding-top: 115px;
+				padding-bottom: 115px;
+			}
+		}
+
 
 /* column block styles 
 ========
@@ -1977,7 +2006,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
           transition: all .2s ease;
 }
 
-			@media (max-width: 480px) { /* extra small screens. */
+		@media (max-width: 480px) { /* extra small screens. */
 			#abo-logo {
 				width: 150px;
 				bottom: -40px;
@@ -2064,8 +2093,26 @@ p.para {
 	padding-bottom: 15px;
 	padding-top: 15px;
 	text-align: left;
-	font-size: 1.2em;
+	font-size: 1.3em;
 }
+
+		@media (max-width: 480px) { /* extra small screens. */
+			.ba-title {
+				font-size: 1.1em;
+			}
+		}
+
+		@media (min-width: 481px) { /* small screens. */
+			.ba-title {
+				font-size: 1.3em;
+			}
+		}
+
+		@media (min-width: 768px) { /* small screens. */
+			.ba-title {
+				font-size: 1.3em;
+			}
+		}
 
 .plus-icon {
 	position: absolute;
@@ -2158,8 +2205,9 @@ p.para {
 
 		@media (max-width: 480px) { /* extra small screens. */
 			.vendor-logo {
+				left: auto;
+				right: auto;
 				width: 150px;
-					left: 0px;
 				
 			}
 		}
@@ -2237,33 +2285,36 @@ p.para {
 
 #num-overlay {
 	padding-top: 80px;
-	font-size: 10em;
-	letter-spacing: .03em;
+	font-size: 8em;
+	letter-spacing: -.02em;
+	
 }
 
 
 
 		@media (max-width: 480px) { /* extra small screens. */
 			#num-overlay {
-				padding-top: 53px;
-				font-size: 4.5em;
-				letter-spacing: .01em;
+				padding-top: 65px;
+				font-size: 3.5em;
+				letter-spacing: -.01em;
+				
 			}
 		}
 
 		@media (min-width: 481px) { /* small screens. */
 			#num-overlay {
-				padding-top: 57px;
-				font-size: 7.5em;
-				letter-spacing: .02em;
+				padding-top: 82px;
+				font-size: 5em;
+				letter-spacing: -.01em;
+				
 			}
 		}
 
 		@media (min-width: 768px) { /* small screens. */
 			#num-overlay {
-				padding-top: 80px;
-				font-size: 10em;
-				letter-spacing: .03em;
+				padding-top: 85px;
+				font-size: 8em;
+				
 			}
 		}
 
@@ -2352,6 +2403,7 @@ p.para {
 .phase-title {
 	padding-left: 18px;
 	text-align: left;
+	font-size: 1.3em;
 	line-height: 1.1em;
 	padding-top: 15px;
 	padding-bottom: 20px;
@@ -2642,10 +2694,6 @@ p.para {
 */
 
 
-.unav-wrap {
-}
-
-
 .unav-image {
 	position: relative;
 	width: 50%;
@@ -2654,6 +2702,11 @@ p.para {
 	height: auto;
 	margin-right: 19px;
 	z-index: 100;
+}
+
+.float-right {
+	float: right;
+	margin-right: 0px;
 }
 
 a.unav-button {
@@ -2788,26 +2841,26 @@ footer {
 
 #up-arrow {
 	position: absolute;
-	width: 44px;
-	right: 60px;
-	top: 40px;
-	opacity: .25;
+	width: 34px;
+	right: 63px;
+	top: 48px;
+	opacity: .2;
 
-	 -webkit-transition: all .1s ease;
-     -moz-transition: all .1s ease;
-       -o-transition: all .1s ease;
-      -ms-transition: all .1s extrase;
-          transition: all .1s ease;
+	 -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+       -o-transition: all .2s ease;
+      -ms-transition: all .2s extrase;
+          transition: all .2s ease;
 }
 
 #up-arrow:hover {
 	cursor: pointer;
 	opacity: .7;
-	 -webkit-transition: all .1s ease;
-     -moz-transition: all .1s ease;
-       -o-transition: all .1s ease;
-      -ms-transition: all .1s extrase;
-          transition: all .1s ease;
+	 -webkit-transition: all .2s ease;
+     -moz-transition: all .2s ease;
+       -o-transition: all .2s ease;
+      -ms-transition: all .2s extrase;
+          transition: all .2s ease;
 }
 
 .footer-signoff {
@@ -2857,8 +2910,9 @@ footer {
 	}
 
 	#up-arrow {
-		width: 40px;
-		right: 20px;
+		width: 28px;
+		right: 23px;
+		top: 49px;
 	}
 }
 
@@ -2903,8 +2957,9 @@ footer {
 	}
 
 	#up-arrow {
-		width: 42px;
-		right: 35px;
+		width: 30px;
+		right: 40px;
+		top: 46px;
 	}
 
 }
@@ -2950,27 +3005,17 @@ footer {
 	}
 
 	#up-arrow {
-		width: 44px;
-		right: 58px;
+		width: 34px;
+		right: 63px;
+		top: 48px;
 	}
 }
 
-
-@media (min-width: 992px) { /* medium screens. */
-	
-}
-
-@media (min-width: 1200px) { /* large screens. */
-	
-}
 
 
 #snowday-link {
 	font-weight: bold;
 }
-
-
-
 
 
 
