@@ -102,7 +102,7 @@ a.phone-link[href^=tel]{
 
 nav.sb-slidebar {
 	background-color: #d4d4d4; /* lt gray #d4d4d4  lighter gray  #f1f1f1  */
-	margin-top: 115px;
+	margin-top: 105px;
 	height: 100%;
 	border-left: 1px solid rgba(100, 100, 100, 0.1);
 }
@@ -111,35 +111,35 @@ nav.sb-slidebar {
 		@media (max-width: 480px) { /* extra small screens */
 			
 			nav.sb-slidebar {
-				margin-top: 75px;
+				margin-top: 62px;
 			}
 		}
 
 		@media (min-width: 481px) { /* small screens */
 			
 			nav.sb-slidebar {
-				margin-top: 95px;
+				margin-top: 82px;
 			}
 		}
 
 		@media (min-width: 768px) { /* small screens */
 			
 			nav.sb-slidebar {
-				margin-top: 115px;
+				margin-top: 100px;
 			}
 		}
 
 		@media (min-width: 992px) { /* medium screens */
 			
 			nav.sb-slidebar {
-				margin-top: 115px;
+				margin-top: 100px;
 			}
 		}
 
 		@media (min-width: 1200px) { /* large screens */
 			
 			nav.sb-slidebar {
-				margin-top: 115px;
+				margin-top: 100px;
 			}
 		}
 
@@ -274,7 +274,7 @@ a.nav:hover {
 
 header {
 	position: fixed;
-	height: 115px;
+	height: 100px;
 	width: 100%;
 	background-color: white;
 	z-index: 50;
@@ -290,7 +290,7 @@ header {
 	display: inline;
 	margin-left: 8%;
 	margin-top: 8px;
-	width: 93px;
+	width: 185px;
 
 	 -webkit-transition: all .2s ease;
      -moz-transition: all .2s ease;
@@ -303,60 +303,60 @@ header {
 		@media (max-width: 480px) { /* extra small screens */
 			
 			header {
-				height: 75px;
+				height: 62px;
 			}
 			#logo {
-			margin-left: 8%;
-			margin-top: 7px;
-			width: 60px;
+			margin-left: 6%;
+			margin-top: 9px;
+			width: 129px;
 			}
 		}
 
 		@media (min-width: 481px) { /* small screens */
 			
 			header {
-				height: 95px;
+				height: 82px;
 			}
 			#logo {
 			margin-left: 8%;
-			margin-top: 8px;
-			width: 77px;
+			margin-top: 14px;
+			width: 167px;
 			}
 		}
 
 		@media (min-width: 768px) { /* small screens */
 			
 			header {
-				height: 115px;
+				height: 100px;
 			}
 			#logo {
 			margin-left: 8%;
-			margin-top: 8px;
-			width: 93px;
+			margin-top: 15px;
+			width: 208px;
 			}
 		}
 
 		@media (min-width: 992px) { /* medium screens */
 			
 			header {
-				height: 115px;
+				height: 100px;
 			}
 			#logo {
 			margin-left: 8%;
-			margin-top: 8px;
-			width: 93px;
+			margin-top: 15px;
+			width: 208px;
 			}
 		}
 
 		@media (min-width: 1200px) { /*large screens */
 			
 			header {
-				height: 115px;
+				height: 100px;
 			}
 			#logo {
 			margin-left: 8%;
-			margin-top: 8px;
-			width: 93px;
+			margin-top: 15px;
+			width: 208px;
 			}
 		}
 
@@ -377,8 +377,7 @@ a.sub-contain {
 	float: left;
 	height: 0px;
 	width: 100px;
-	margin-top: 18px;
-
+	margin-top: 10px;
 	text-decoration: none;
 	padding-left: 30px;
 	padding-top: 28px;
@@ -429,9 +428,9 @@ a.sub-contain:hover {
 				position: fixed;
 				padding: 0px;
 				width: 400px;
-				height: 90px;
+				height: 42px;
 				top: 10px;
-				right: -200px;
+				right: -222px;
 				overflow: hidden;
 			}
 
@@ -440,13 +439,14 @@ a.sub-contain:hover {
 				display: inline;
 				float: left;
 				margin-top: 0px;
+				right: -18px;
 				height: 0px;
-				width: 30px;
+				width: 18px;
 			}
 
 			.top-icons {
-				width: 31px;
-				top: 12px;
+				width: 28px;
+				top: 7px;
 				padding-left: 0px;
 				margin-right: 0px;
 			}
@@ -461,7 +461,7 @@ a.sub-contain:hover {
 				width: 400px;
 				height: 90px;
 				top: 13px;
-				right: -140px;
+				right: -145px;
 				overflow: hidden;
 			}
 
@@ -475,8 +475,8 @@ a.sub-contain:hover {
 			}
 
 			.top-icons {
-				width: 36px;
-				top: 18px;
+				width: 35px;
+				top: 14px;
 				padding-left: 0px;
 				margin-right: 0px;
 			}	
@@ -499,7 +499,7 @@ a.sub-contain:hover {
 				position: relative;
 				display: inline;
 				float: left;
-				margin-top: 18px;
+				margin-top: 12px;
 				height: 0px;
 				width: 100px;
 			}
@@ -507,7 +507,7 @@ a.sub-contain:hover {
 			.top-icons {
 				position: fixed;
 				width: 40px;
-				top: 26px;
+				top: 20px;
 				margin-right: 20px;
 				padding: 10px;
 				padding-left: 50px;
@@ -598,45 +598,45 @@ a.sub-contain:hover {
 .page-wrap {
 	position: relative;
 	background-color: white;
-	margin-top: 115px;
-	margin-bottom: -115px;
+	margin-top: 100px;
+	margin-bottom: -100px;
 	height: 100%;
 	width: 100%;
 }
 
 @media (max-width: 480px) { /* extra small screens. */
 	.page-wrap {
-	margin-top: 75px;
-	margin-bottom: -75px;
+	margin-top: 62px;
+	margin-bottom: -62px;
 	}
 }
 
 @media (min-width: 481px) { /* small screens. */
 	.page-wrap {
-	margin-top: 95px;
-	margin-bottom: -95px;
+	margin-top: 82px;
+	margin-bottom: -82px;
 	}
 }
 
 @media (min-width: 768px) { /* small screens. */
 	.page-wrap {
-	margin-top: 115px;
-	margin-bottom: -115px;
+	margin-top: 100px;
+	margin-bottom: -100px;
 	}
 }
 
 
 @media (min-width: 992px) { /* medium screens. */
 	.page-wrap {
-	margin-top: 115px;
-	margin-bottom: -115px;
+	margin-top: 100px;
+	margin-bottom: -100px;
 	}
 }
 
 @media (min-width: 1200px) { /* large screens. */
 	.page-wrap {
-	margin-top: 115px;
-	margin-bottom: -115px;
+	margin-top: 100px;
+	margin-bottom: -100px;
 	}
 }
 
@@ -670,21 +670,21 @@ a.sub-contain:hover {
 
 @media (max-width: 480px) { /* extra small screens. */
 	.map-wrap-inner {
-		top: 75px;
+		top: 62px;
 		bottom: 45px;
 	}
 }
 
 @media (min-width: 481px) { /* small screens. */
 	.map-wrap-inner{
-		top: 95px;
+		top: 82px;
 		bottom: 56px;
 	}
 }
 
 @media (min-width: 768px) { /* small screens. */
 	.map-wrap-inner {
-		top: 115px;
+		top: 100px;
 		bottom: 64px;
 	}
 }
@@ -692,14 +692,14 @@ a.sub-contain:hover {
 
 @media (min-width: 992px) { /* medium screens. */
 	.map-wrap-inner {
-		top: 115px;
+		top: 100px;
 		bottom: 64px;
 	}
 }
 
 @media (min-width: 1200px) { /* large screens. */
 	.map-wrap-inner {
-		top: 115px;
+		top: 100px;
 		bottom: 64px;
 	}
 }
