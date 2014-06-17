@@ -24,7 +24,7 @@ a.phone-link[href^=tel]{
 
 #about-img-1 {
 	overflow: hidden;	
-		background-image: url('images/test-1.png');
+		background-image: url('images/orthodontics_1.jpg');
 		background-repeat: no-repeat;
 		background-position: fixed;
 		background-position: center;
@@ -61,7 +61,18 @@ a.phone-link[href^=tel]{
 	  	background-size: cover;
 }
 
-
+#gs-img-3 {
+	overflow: hidden;	
+		background-image: url('images/gs_3.jpg');
+		background-repeat: no-repeat;
+		background-position: fixed;
+		background-position: center;
+		
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+}
 
 
 
@@ -72,7 +83,7 @@ a.phone-link[href^=tel]{
 
 
 #treatment-img-1 {
-		background-image: url('images/test-10.png');
+		background-image: url('images/treatment_1.jpg');
 		overflow: hidden;	
 		background-repeat: no-repeat;
 		background-position: fixed;
@@ -85,7 +96,7 @@ a.phone-link[href^=tel]{
 }
 
 #treatment-img-2 {
-		background-image: url('images/test-11.png');
+		background-image: url('images/treatment_2.jpg');
 		overflow: hidden;	
 		background-repeat: no-repeat;
 		background-position: fixed;
@@ -96,6 +107,21 @@ a.phone-link[href^=tel]{
 	  	-o-background-size: cover;
 	  	background-size: cover;
 }
+
+
+#home-img-1 {
+		background-image: url('images/hello.png');
+		overflow: hidden;	
+		background-repeat: no-repeat;
+		background-position: fixed;
+		background-position: center;
+		
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+}
+
 
 
 /***************** navigation styles ******************/
@@ -830,19 +856,19 @@ a.black-text {
 
 		@media (max-width: 480px) { /* extra small screens. */
 			.contact-wrap-2 {
-				height: calc(100% - 75px);
+				height: calc(100% - 62px);
 			}
 		}
 
 		@media (min-width: 481px) { /* small screens. */
 			.contact-wrap-2 {
-				height: calc(100% - 95px);
+				height: calc(100% - 82px);
 			}
 		}
 
 		@media (min-width: 768px) { /* small screens. */
 			.contact-wrap-2 {
-				height: calc(100% - 115px);
+				height: calc(100% - 100px);
 			}
 		}
 
@@ -1531,6 +1557,38 @@ a.on-dkgray{ /* dr. hyduk read more button */
 		}
 
 
+.txtblock-1-5 { /* for home page text block */
+	padding-top: 70px;
+	padding-bottom: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+}
+
+		@media (max-width: 480px) { /* extra small screens. */
+			.txtblock-1-5 {
+				padding-top: 42px;
+				padding-bottom: 48px;
+			}
+		}
+
+		@media (min-width: 481px) { /* small screens. */
+			.txtblock-1-5 {
+				padding-top: 60px;
+				padding-bottom: 70px;
+			}
+		}
+
+		@media (min-width: 768px) { /* small screens. */
+			.txtblock-1-5 {
+				padding-top: 60px;
+				padding-bottom: 90px;
+			}
+		}
+
+
+
 
 
 .txtblock-2 { /* for plain quote blocks*/
@@ -1951,6 +2009,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
 		@media (min-width: 768px) { /* small screens. */
 			.staff-descriptors {
 				line-height: 1.5em;
+				font-size: 1.2em;
 			}
 		}
 
@@ -2283,7 +2342,7 @@ p.para {
 
 #num-overlay {
 	padding-top: 80px;
-	font-size: 8em;
+	font-size: 5em;
 	letter-spacing: -.02em;
 	
 }
@@ -2292,8 +2351,8 @@ p.para {
 
 		@media (max-width: 480px) { /* extra small screens. */
 			#num-overlay {
-				padding-top: 65px;
-				font-size: 3.5em;
+				padding-top: 70px;
+				font-size: 3em;
 				letter-spacing: -.01em;
 				
 			}
@@ -2301,8 +2360,8 @@ p.para {
 
 		@media (min-width: 481px) { /* small screens. */
 			#num-overlay {
-				padding-top: 82px;
-				font-size: 5em;
+				padding-top: 100px;
+				font-size: 3em;
 				letter-spacing: -.01em;
 				
 			}
@@ -2310,8 +2369,8 @@ p.para {
 
 		@media (min-width: 768px) { /* small screens. */
 			#num-overlay {
-				padding-top: 85px;
-				font-size: 8em;
+				padding-top: 120px;
+				font-size: 5em;
 				
 			}
 		}
