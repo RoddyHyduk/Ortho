@@ -2054,6 +2054,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
 #abo-logo {
 	width: 180px;
 	position: relative;
+	padding-bottom: 20px;
 	bottom: -40px;
 
 	 -webkit-transition: all .2s ease;
@@ -2065,15 +2066,16 @@ a.on-dkgray{ /* dr. hyduk read more button */
 
 		@media (max-width: 480px) { /* extra small screens. */
 			#abo-logo {
-				width: 150px;
-				bottom: -40px;
+				width: 145px;
+				bottom: -30px;
 			}
 		}
 
 		@media (min-width: 481px) { /* small screens. */
 			#abo-logo {
-				width: 158px;
-				bottom: -40px;
+				width: 150px;
+				bottom: -20px;
+				padding-bottom: 10px;
 			}
 		}
 
@@ -2081,6 +2083,7 @@ a.on-dkgray{ /* dr. hyduk read more button */
 			#abo-logo {
 				width: 180px;
 				bottom: -60px;
+				padding-bottom: 20px;
 			}
 		}
 
