@@ -447,7 +447,7 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('#sb-site').animate({
-          scrollTop: target.offset().top
+          scrollTop: (target.offset().top - $('header').outerHeight() - 7)
         }, 550);
         return false;
       }
