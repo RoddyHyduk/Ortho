@@ -357,43 +357,10 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="js/slidebars.js"></script>
-
-<script>
-  (function($) {
-    $(document).ready(function() {
-      $.slidebars();
-    });
-  }) (jQuery);
-</script>
-
-<script>
-  (function($) {
-    $(document).ready(function() {
-      $.slidebars({
-        siteClose: true
-        disableOver: false 
-        hideControlClasses: true
-      });
-    });
-  }) (jQuery);
-</script>
-
-<script>
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('#sb-site').animate({
-          scrollTop: (target.offset().top - $('header').outerHeight() - 7)
-        }, 750);
-        return false;
-      }
-    }
-  });
-});
-</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/slidebars.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/hyduk_functions.js"></script>
 
 
 
